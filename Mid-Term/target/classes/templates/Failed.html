@@ -1,0 +1,29 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<link rel="StyleSheet" href="Style.css">
+</head>
+<body id="h01">
+
+<div id="wel">
+<h1>Sorry! Word has not been found!!</h1>
+<h4>Would you like to continue?</h4>
+<form id="form" action="#" th:action="@{/search}" th:object="${word}" method="get">
+
+
+
+<br><br>
+<input type="submit" value="YES">
+
+</form>
+<form id="form" action="#" th:action=@{/thankyou}>
+
+
+
+<input type="submit" value="NO">
+
+</form>
+</div>
+</body>
+</html>

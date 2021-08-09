@@ -1,0 +1,38 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>
+Welcome</title>
+<link rel="Stylesheet" href="Style.css">
+
+</head>
+<body id=h01>
+
+
+<div id="wel">
+<h1> Data Inserted</h1>
+
+<table th:each="data:${userdata}">
+ <tr th:text="${data.userName}"></tr>
+ </table>
+ <table th:each="data:${userdata}">
+ <tr th:text="${data.age}"></tr>
+ </table>
+ <table th:each="data:${userdata}">
+<tr th:text="${data.uniqueKey}"></tr>
+
+
+
+</table>
+<form id="form" action="#" th:action="@{/side}" th:object="${side}" method="get">
+
+
+
+<br><br>
+<input type="submit" value="Continue">
+
+
+</form>
+
+</div>
+</body>
+</html>

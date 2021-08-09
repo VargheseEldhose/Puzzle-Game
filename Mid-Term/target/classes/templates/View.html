@@ -1,0 +1,23 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>
+Welcome</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body id="h01">
+<div id="wel">
+<h1 id="h1"> Crossword</h1>
+
+<table>
+<tr th:each="row: ${array}">
+<td th:each="value: ${row}" th:text="${value}+' '"></td>
+</tr>
+</table>
+
+
+
+</div>
+
+</body>
+</html>

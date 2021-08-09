@@ -1,0 +1,1 @@
+CREATE TABLE UserInfo (userName VARCHAR(16), age INTEGER, uniqueKey INTEGER);
